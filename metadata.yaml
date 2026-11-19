@@ -1,0 +1,8 @@
+name: astrbot_plugin_uk_trains
+display_name: UK Trains
+short_desc: Ask about UK trains in plain language; the LLM calls Realtime Trains for times, delays and platforms.
+desc: 英国火车查询。用户自然语言提问，大模型通过函数调用查询 Realtime Trains（新版 API），返回班次、站台、晚点与取消信息。
+version: v0.1.0
+author: qualcone
+repo: https://github.com/qualcone/astrbot_plugin_uk_trains
+astrbot_version: ">=4.5.1"

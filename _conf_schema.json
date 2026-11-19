@@ -1,0 +1,33 @@
+{
+  "rtt_token": {
+    "type": "string",
+    "description": "RTT API Token（Bearer，长期 access token 或 refresh token 均可）。在 https://api-portal.rtt.io 注册获取。旧版用户名/密码（api.rtt.io）已停用。",
+    "default": "",
+    "secret": true
+  },
+  "default_count": {
+    "type": "int",
+    "description": "默认返回班次数量（1-15）",
+    "default": 8
+  },
+  "timeout": {
+    "type": "float",
+    "description": "请求超时秒数",
+    "default": 10
+  },
+  "cache_ttl": {
+    "type": "int",
+    "description": "相同查询的缓存秒数（RTT 新版限额很低：每分钟 10 次、每小时 100 次，不建议调太小）",
+    "default": 60
+  },
+  "time_window_minutes": {
+    "type": "int",
+    "description": "查询时间窗口（分钟），从指定出发时间起向后搜索",
+    "default": 180
+  },
+  "arrival_lookup_count": {
+    "type": "int",
+    "description": "为前 N 班车额外查询到达时间（每班消耗 1 次 API 请求；0 表示不查）",
+    "default": 4
+  }
+}
